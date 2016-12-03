@@ -3,6 +3,20 @@ summary: |
   NGINX is an HTTP server, reverse proxy and IMAP/POP3 proxy server.
 description: |
   NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. NGINX is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption.
+series: xenial
 provides:
   website:
     interface: http
+resources:
+  nginx-cert:
+    type: file
+    filename: nginx-repo.crt
+    description: "nginx-repo.crt provided by NGINX"
+  nginx-key:
+    type: file
+    filename: nginx-repo.key
+    description: "nginx-repo.key provided by NGINX"
+  config-file:
+    type: file
+    filename: server.conf
+    description: "Custom NGINX configuration file"
